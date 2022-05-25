@@ -1,0 +1,13 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <app-shopping-edit (newIngredientAdded)="addIngredient($event)"></app-shopping-edit>
+            <hr>
+            <ul class="list-group">
+                <li *ngFor = "let ingredient of ingredients" class="list-group-item">
+                    {{ ingredient.ingredientName }} ({{ ingredient.ingredientAmount }})
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
